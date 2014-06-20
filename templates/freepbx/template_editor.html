@@ -138,6 +138,8 @@
                         {elseif condition="$value.type == 'checkbox'"}
                                     <label>{if condition="isset($value.tooltip)"}<a href="#" class="info">{$value.description}<span>{$value.tooltip}</span></a>{else}{$value.description}{/if}:
                                     </td><td><input type='checkbox' name='{$value.key}' id='{$value.key}' value='{$value.value}'></label>
+					    {else}
+						</td><td>&nbsp;	    
 					    {/if}
                                     </td><td width="90%">
 						{if condition="isset($value.aried)"}
@@ -147,6 +149,7 @@
                                 </tr>
 						{if condition="$value.type == 'break'"}
                                 <tr>
+                                    <td>&nbsp;</td>
                                     <td>&nbsp;</td>
                                     <td>&nbsp;</td>
                                 </tr>
